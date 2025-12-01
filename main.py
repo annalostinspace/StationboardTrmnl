@@ -14,8 +14,11 @@ Aufgabe: ...
 Version: 0.[...]
 """
 
-import pySBB
 import json
+import datetime
+from http.client import responses
+
+import pySBB
 import requests
 
 
@@ -50,14 +53,13 @@ def uploadStationboard(stationboard):
     api_url = "https://usetrmnl.com/api/custom_plugins/"
     plugin_uuid = "7c0e640b-f0dd-418a-88df-f84723598ba8"
     headers = {"Content-Type": "application/json"}
-    print(
-        requests.post(
-            api_url + plugin_uuid,
-            headers=headers,
-            data=stationboard
-        )
+    return requests.post(
+        api_url + plugin_uuid,
+        headers=headers,
+        data=stationboard
     )
 
 if __name__ == "__main__":
-    # uploadStationboard(getStationboard("Burgdorf"))
-    print(getStationboard("Burgdorf"))
+    response = uploadStationboard(getStationboard("Burgdorf"))
+    now = datetime.datetime.now()
+    print(now.strftime("%y.%m.%d %H:%M:%S ") + "Uploading Stationboard returned code: " + str(response.status_code))
