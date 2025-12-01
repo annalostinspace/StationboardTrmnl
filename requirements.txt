@@ -1,12 +1,3 @@
-brotlicffi @ file:///home/task_176295026431292/conda-bld/brotlicffi_1762950277512/work
-certifi @ file:///home/task_176313455153976/conda-bld/certifi_1763135329031/work/certifi
-cffi @ file:///home/task_176183214835616/conda-bld/cffi_1761832774688/work
-charset-normalizer @ file:///home/task_176174481524083/conda-bld/charset-normalizer_1761744828711/work
-idna @ file:///home/task_176191175488988/conda-bld/idna_1761911981595/work
-pycparser @ file:///home/task_175749564936714/conda-bld/pycparser_1757496040682/work
 pySBB==1.1.0
-PySocks @ file:///home/task_176175235884818/conda-bld/pysocks_1761753009495/work
-requests @ file:///home/task_176235918788486/conda-bld/requests_1762359591632/work
 setuptools==80.9.0
-urllib3 @ file:///croot/urllib3_1750775463400/work
 wheel==0.45.1
