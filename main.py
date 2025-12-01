@@ -58,6 +58,6 @@ def uploadStationboard(stationboard):
         )
     )
 
-
-# uploadStationboard(getStationboard("Burgdorf"))
-print(getStationboard("Burgdorf"))
+if __name__ == "__main__":
+    # uploadStationboard(getStationboard("Burgdorf"))
+    print(getStationboard("Burgdorf"))
