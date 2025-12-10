@@ -16,8 +16,6 @@ Version: 0.[...]
 
 import json
 import datetime
-from http.client import responses
-
 import pySBB
 import requests
 
@@ -39,12 +37,12 @@ def getStationboard(station: str):
         }
         departures.append(departure)
 
-        stationboard = {
-            "merge_variables": {
-                "station": station,
-                "departures": departures
-            }
+    stationboard = {
+        "merge_variables": {
+            "station": station,
+            "departures": departures
         }
+    }
 
     return json.dumps(stationboard, ensure_ascii=False)
 
